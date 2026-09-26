@@ -63,12 +63,15 @@ nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 
 const sections = [...document.querySelectorAll('main section[id], header[id]')];
 const navLinks = [...document.querySelectorAll('.main-nav a')];
-const observer = new IntersectionObserver(entries => {
-  const visible = entries.filter(e => e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
-  if (!visible) return;
-  navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${visible.target.id}`));
-}, {rootMargin:'-25% 0px -60% 0px', threshold:[0,.15,.5]});
-sections.forEach(s => observer.observe(s));
+const localNavLinks = navLinks.filter(a => (a.getAttribute('href') || '').startsWith('#'));
+if (localNavLinks.length) {
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+    if (!visible) return;
+    localNavLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${visible.target.id}`));
+  }, {rootMargin:'-25% 0px -60% 0px', threshold:[0,.15,.5]});
+  sections.forEach(s => observer.observe(s));
+}
 
 const serviceModal = document.getElementById('service-modal');
 const modalTitle = document.getElementById('service-modal-title');
