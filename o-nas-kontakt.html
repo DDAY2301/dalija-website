@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="O čistilnem servisu DALIJA in kontakt za povpraševanje.">
+<title>O nas & Kontakt | DALIJA</title>
+<link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Preskoči na vsebino</a>
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="index.html" aria-label="DALIJA – domov">
+      <img src="assets/logo.svg" alt="DALIJA čistilni servis – Čisto okolje, boljši dan.">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Odpri meni"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Glavna navigacija">
+      <a href="index.html">Domov</a>
+      <a href="o-nas-kontakt.html" class="active">O nas & Kontakt</a>
+      <a href="storitve.html">Storitve</a>
+      <a href="cenik.html">Cenik</a>
+      <a href="index.html#galerija">Galerija</a>
+    </nav>
+    <a class="btn btn-small header-cta" href="o-nas-kontakt.html#kontakt"><span aria-hidden="true">✉</span> Kontakt</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero page-hero-about">
+    <div class="container">
+      <span class="eyebrow">DALIJA čistilni servis</span>
+      <h1>O nas &amp; Kontakt</h1>
+      <p>Spoznajte naš pristop k čiščenju in nam pošljite povpraševanje na istem mestu.</p>
+    </div>
+  </section>
+
+  <section class="section about-page" id="o-nas">
+    <div class="container about-page-grid">
+      <div class="about-copy about-copy-standalone">
+        <div class="section-heading">
+          <span>O nas</span>
+          <h2>DALIJA – vaš zanesljiv partner za čisto in urejeno okolje</h2>
+        </div>
+        <p>DALIJA je čistilni servis, namenjen vsem, ki si želijo kakovostno, zanesljivo in skrbno opravljeno čiščenje.</p>
+        <p>Pri DALIJA se osredotočamo na natančnost, urejenost in prilagajanje potrebam vsake stranke. Zavedamo se, da vsak prostor potrebuje drugačen pristop, zato se pred izvedbo dogovorimo o obsegu storitve in vaših željah.</p>
+        <p>Uporabljamo kakovostno profesionalno opremo in ustrezna čistila ter pri delu skrbimo za varnost površin in okolja.</p>
+        <p class="about-highlight">Naš cilj je preprost – da je po našem obisku vaš prostor čist, svež in prijeten.</p>
+      </div>
+      <div class="about-visual card-frame">
+        <img src="https://images.unsplash.com/photo-1641927130955-8e118b3d3306?auto=format&fit=crop&fm=jpg&q=82&w=1200" alt="Profesionalno čiščenje svetlega prostora">
+      </div>
+    </div>
+  </section>
+
+  <section class="section why why-standalone">
+    <div class="container">
+      <div class="section-heading centered"><span>Zakaj DALIJA?</span><h2>Storitev prilagodimo vašemu prostoru</h2></div>
+      <div class="why-features why-features-wide">
+        <div><strong>✓</strong><span>Zanesljivost<br>in točnost</span></div>
+        <div><strong>✦</strong><span>Natančno<br>čiščenje</span></div>
+        <div><strong>♡</strong><span>Prilagodljivost<br>potrebam</span></div>
+        <div><strong>⚙</strong><span>Profesionalna<br>oprema</span></div>
+        <div><strong>⌁</strong><span>Skrb za<br>okolje</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="kontakt">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="section-heading"><span>Kontakt</span><h2>Dogovorimo se za čiščenje</h2></div>
+        <p>Pošljite nam osnovne informacije o prostoru in želenem čiščenju. Odgovorili vam bomo s predlogom izvedbe.</p>
+        <div class="contact-links">
+          <a href="tel:+38641234567"><span>☎</span><div><small>Telefon</small><strong>+386 41 234 567</strong></div></a>
+          <a href="mailto:info@cistilniservis-dalija.si"><span>✉</span><div><small>E-pošta</small><strong>info@cistilniservis-dalija.si</strong></div></a>
+          <div><span>⌖</span><div><small>Območje</small><strong>Ljubljana in okolica</strong></div></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label>Ime in priimek *<input type="text" name="name" required autocomplete="name"></label>
+          <label>E-pošta *<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="form-row">
+          <label>Telefon<input type="tel" name="phone" autocomplete="tel"></label>
+          <label>Storitev<select name="service">
+            <option>Redno čiščenje</option><option>Čiščenje oken</option><option>Temeljito čiščenje</option><option>Čiščenje kuhinj</option><option>Čiščenje kopalnic</option><option>Čiščenje fasad</option><option>Dodatne storitve</option><option>Dezinfekcija prostorov</option>
+          </select></label>
+        </div>
+        <label>Sporočilo *<textarea name="message" rows="6" required placeholder="Na kratko opišite prostor, lokacijo in želeni termin."></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Strinjam se, da se podatki uporabijo za odgovor na moje povpraševanje.</span></label>
+        <button class="btn btn-primary btn-wide" type="submit">✈ Pošlji povpraševanje</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <p class="form-note">Ob kliku se pripravi e-poštno sporočilo v vašem privzetem e-poštnem programu.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-top">
+    <a class="footer-brand" href="index.html"><img src="assets/logo.svg" alt="DALIJA čistilni servis"></a>
+    <div class="footer-contact">
+      <a href="tel:+38641234567">☎ +386 41 234 567</a>
+      <a href="mailto:info@cistilniservis-dalija.si">✉ info@cistilniservis-dalija.si</a>
+      <span>⌖ Ljubljana in okolica</span>
+    </div>
+    <div class="footer-tagline">Čisto okolje,<br>boljši dan. ♡</div>
+  </div>
+  <div class="footer-bottom"><div class="container">
+    <nav aria-label="Navigacija v nogi"><a href="index.html">Domov</a><a href="o-nas-kontakt.html">O nas &amp; Kontakt</a><a href="storitve.html">Storitve</a><a href="cenik.html">Cenik</a><a href="index.html#galerija">Galerija</a></nav>
+    <small>© <span id="year"></span> DALIJA. Vse pravice pridržane.</small>
+  </div></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
